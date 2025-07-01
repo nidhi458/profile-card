@@ -1,0 +1,67 @@
+body{
+    background-color: lightcyan;
+}
+
+.first{
+    width:100%;
+}
+
+a:hover{
+    color:green;
+}
+
+.main-head h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: Center;
+    margin-top:17px;
+    padding-bottom: 10px;
+    background-color: rgb(70, 70, 205);
+    color:white;
+}
+
+.content{
+    padding-right: 50%;
+}
+
+#sideimage{
+    float:right;
+    margin-top: -135px;
+    margin-right: 20px;
+    padding: 0;
+    
+}
+
+#image{
+    border-radius: 50%;
+    width: 150px;
+    border:2px solid #333;
+}
+
+.footer{
+    color:white;
+    margin-top: 210px;
+    text-align: center;
+    background-color:rgb(70, 70, 205);
+    box-shadow: green;
+}
+
+.listed li{
+ list-style-image:url('../images/check.png')
+}
+
+.button{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(34, 34, 154);
+    color:aliceblue;
+    border-radius: 5px;
+    text-decoration: none;
+    width:100px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.other-content
+{
+    line-height: 1.6em;
+}
