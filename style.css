@@ -1,9 +1,23 @@
-body{
-    background-color: lightcyan;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
-.first{
-    width:100%;
+body{
+    background-color: #edf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
 
 a:hover{
@@ -19,30 +33,31 @@ a:hover{
     color:white;
 }
 
-.content{
-    padding-right: 50%;
+.bioImage{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:30px;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+#image {
+    max-width: 100%;      /* Prevent image overflow */
+    height: auto;
+    border-radius: 50%;   /* Keep it round if that’s your style */
 }
 
-#sideimage{
-    float:right;
-    margin-top: -135px;
-    margin-right: 20px;
-    padding: 0;
-    
-}
-
-#image{
-    border-radius: 50%;
-    width: 150px;
-    border:2px solid #333;
-}
-
-.footer{
-    color:white;
-    margin-top: 210px;
-    text-align: center;
-    background-color:rgb(70, 70, 205);
-    box-shadow: green;
+.GitSkills{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    align-items: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .listed li{
@@ -51,6 +66,7 @@ a:hover{
 
 .button{
     display: inline-block;
+    margin-top: 30px;
     text-align: center;
     background-color: rgb(34, 34, 154);
     color:aliceblue;
@@ -63,5 +79,23 @@ a:hover{
 
 .other-content
 {
+    margin-top: 30px;
     line-height: 1.6em;
 }
+
+.footer{
+    color:white;
+    margin-top: 210px;
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(70, 70, 205);
+}
+
+@media(max-width: 768px)
+{
+    .bioImage, .GitSkills{
+        grid-template-columns: 1fr;
+    }
+}
+
+
